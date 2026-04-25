@@ -51,10 +51,10 @@ class AchievementListener implements Listener {
 
         foreach ($outputs as $item) {
             match ($item->getTypeId()) {
-                ItemTypeIds::CRAFTING_TABLE   => $this->tryAward($player, "buildWorkBench"),
+                ItemTypeIds::fromBlockTypeId(BlockTypeIds::CRAFTING_TABLE)   => $this->tryAward($player, "buildWorkBench"),
                 ItemTypeIds::WOODEN_PICKAXE,
                 ItemTypeIds::STONE_PICKAXE    => $this->tryAward($player, "buildPickaxe"),
-                ItemTypeIds::FURNACE          => $this->tryAward($player, "buildFurnace"),
+                ItemTypeIds::fromBlockTypeId(BlockTypeIds::FURNACE)         => $this->tryAward($player, "buildFurnace"),
                 ItemTypeIds::STONE_PICKAXE,
                 ItemTypeIds::IRON_PICKAXE     => $this->tryAward($player, "buildBetterPickaxe"),
                 ItemTypeIds::WOODEN_HOE,
@@ -64,7 +64,7 @@ class AchievementListener implements Listener {
                 ItemTypeIds::STONE_SWORD,
                 ItemTypeIds::IRON_SWORD       => $this->tryAward($player, "buildSword"),
                 ItemTypeIds::BREAD            => $this->tryAward($player, "makeBread"),
-                ItemTypeIds::CAKE             => $this->tryAward($player, "bakeCake"),
+                ItemTypeIds::fromBlockTypeId(BlockTypeIds::CAKE)            => $this->tryAward($player, "bakeCake"),
                 default                       => null,
             };
         }
