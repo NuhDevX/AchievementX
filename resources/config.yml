@@ -1,0 +1,5 @@
+# AchievementPlugin Configuration
+
+# Whether to announce achievements to all players
+# Set to false to only show achievement messages to the player who earned it
+announce-player-achievements: true
