@@ -10,7 +10,7 @@ use pocketmine\event\inventory\CraftItemEvent;
 use pocketmine\event\Listener;
 use pocketmine\item\ItemTypeIds;
 use pocketmine\player\Player;
-use YourName\Achievement\Main;
+use Nuh\AchievementX\Main;
 
 class AchievementListener implements Listener {
 
