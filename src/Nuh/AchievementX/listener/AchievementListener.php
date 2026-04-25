@@ -55,7 +55,6 @@ class AchievementListener implements Listener {
                 ItemTypeIds::WOODEN_PICKAXE,
                 ItemTypeIds::STONE_PICKAXE    => $this->tryAward($player, "buildPickaxe"),
                 ItemTypeIds::fromBlockTypeId(BlockTypeIds::FURNACE)         => $this->tryAward($player, "buildFurnace"),
-                ItemTypeIds::STONE_PICKAXE,
                 ItemTypeIds::IRON_PICKAXE     => $this->tryAward($player, "buildBetterPickaxe"),
                 ItemTypeIds::WOODEN_HOE,
                 ItemTypeIds::STONE_HOE,
