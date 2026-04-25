@@ -1,0 +1,21 @@
+name: AchievementX
+main: Nuh\AchievementX\Main
+version: 1.0.0
+api: 5.0.0
+author: Nuh
+description: Achievement system for PocketMine-MP
+
+commands:
+  achievement:
+    description: Achievement commands
+    usage: /achievement <give|list> [player] [achievementId]
+    permission: achievement.command
+
+permissions:
+  achievement.command:
+    description: Allows use of achievement commands
+    default: op
+  achievement.give:
+    description: Allows giving achievements to players
+    default: op
+    
