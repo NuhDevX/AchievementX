@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Nuh\Achievement;
+namespace Nuh\AchievementX;
 
 use pocketmine\player\Player;
 use pocketmine\utils\TextFormat;
